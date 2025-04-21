@@ -16,7 +16,7 @@ const TaskForm = () => {
     try {
       await createTask(task)
       await axios.post('http://localhost:4002/notifications', {
-        title: 'New Task Created.',
+        title: 'New Task Created',
         message: `Task "${task.title}" assigned to ${task.assignee}`,
         user_name: 'Vamsi',
       })
